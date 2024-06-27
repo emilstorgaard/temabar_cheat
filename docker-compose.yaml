@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  temabar_cheat_api:
+    image: temabar_cheat_api:latest
+    ports:
+      - '8585:8585'
