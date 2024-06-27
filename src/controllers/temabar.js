@@ -9,7 +9,7 @@ class Temabar {
             await temabar.register(email, token);
             const prize_name = await temabar.finish(token);
 
-            res.status(200).json({"message": `Du vandt (${prize_name}) og har modtaget en mail`});
+            res.status(200).json({"message": `Du vandt (${prize_name}). Tjek din mail`});
         } catch (error) {
             res.status(500).json({ error: `Internal server error: ${error.message}` });
         }
